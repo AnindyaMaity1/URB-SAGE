@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111611">
+  <title>An Uncertainty-Aware Spatio-Temporal Graph Reinforcement Learning Framework for Climate-Resilient Green Infrastructure Planning in Smart Cities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" data-page="overview" aria-label="Canopy overview">
+        <span class="brand-mark">C<span>+</span></span>
+        <span><strong>canopy</strong><small>CLIMATE SYSTEMS LAB</small></span>
+      </a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav id="primaryNav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="overview"><i>01</i> Overview</button>
+        <button class="nav-item" data-page="map"><i>02</i> Urban risk map</button>
+        <button class="nav-item" data-page="flood"><i>03</i> Flood risk</button>
+        <button class="nav-item" data-page="heat"><i>04</i> Heat risk</button>
+        <button class="nav-item" data-page="uncertainty"><i>05</i> Uncertainty</button>
+        <button class="nav-item" data-page="recommendations"><i>06</i> Recommendations</button>
+        <button class="nav-item" data-page="optimization"><i>07</i> RL optimization</button>
+        <button class="nav-item" data-page="scenarios"><i>08</i> Climate scenarios</button>
+        <button class="nav-item" data-page="explain"><i>09</i> Explainable AI</button>
+        <button class="nav-item" data-page="comparison"><i>10</i> Before / after</button>
+        <button class="nav-item" data-page="analytics"><i>11</i> Analytics</button>
+        <button class="nav-item" data-page="system"><i>12</i> System information</button>
+        <button class="nav-item" data-page="result-graphs"><i>13</i> Result graphs</button>
+      </nav>
+      <div class="sidebar-foot">
+        <span class="live-dot"></span><span>LOCAL PROTOTYPE</span>
+        <small>Auto CUDA · CPU fallback · seeded</small>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="crumb"><span>RESEARCH WORKSPACE</span><b>/</b><strong id="pageName">Overview</strong></div>
+        <div class="top-actions">
+          <span class="sample-label"><span class="live-dot"></span> SIMULATED DATA</span>
+          <span class="refresh-status" id="freshness" aria-live="polite">Waiting for computation</span>
+          <button class="button button-outline" id="refreshButton" title="Refresh values from active dataset" aria-label="Refresh values">↻</button>
+          <label class="scenario-control">SCENARIO
+            <select id="globalScenario" aria-label="Climate scenario">
+              <option>Baseline</option><option>Heavy rainfall</option><option>Extreme rainfall</option>
+              <option>Heatwave</option><option>Compound stress</option>
+            </select>
+          </label>
+          <input id="fileInput" type="file" accept=".csv,.xlsx,.geojson,.json,text/csv,application/geo+json" hidden>
+          <button class="button button-outline" id="uploadButton" title="Load dataset" aria-label="Load dataset">↑ <span>Load dataset</span></button>
+        </div>
+      </header>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+      <div id="appView" class="page-content" aria-live="polite">
+        <div class="loading-state"><span class="spinner"></span>Preparing the seeded study area…</div>
+      </div>
+      <footer class="page-footer"><span>CANOPY / CLIMATE RESILIENCE RESEARCH PROTOTYPE</span><span id="footerStatus">Synthetic demonstration dataset</span></footer>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>
