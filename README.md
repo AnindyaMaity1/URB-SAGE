@@ -85,39 +85,39 @@ The project includes a Gymnasium-style environment and a PPO planner for budget-
 The optimization balances:
 
 - Flood reduction
-- Heat reduction,
-- Carbon impact,
-- Green coverage gains,
-- Maintenance and installation cost.
+- Heat reduction
+- Carbon impact
+- Green coverage gains
+- Maintenance and installation cost
 
 ### 3.5 Visualization and reporting
 
 The dashboard provides panels for:
 
-- Overview and summary metrics
-- Urban risk maps
-- Flood and heat risk views
-- Uncertainty analysis
-- Green infrastructure recommendations
-- RL optimization outcomes
-- Scenario comparisons
-- Explainable AI output
-- Before/after comparison
-- Analytics and historical runs
-- Downloadable results and figure exports
+- Overview and summary metrics.
+- Urban risk maps.
+- Flood and heat risk views.
+- Uncertainty analysis.
+- Green infrastructure recommendations.
+- RL optimization outcomes.
+- Scenario comparisons.
+- Explainable AI output.
+- Before/after comparison.
+- Analytics and historical runs.
+- Downloadable results and figure exports.
 
 
 ## 4. System Architecture
 
 The project follows a modular local architecture:
 
-- Flask app: web interface and API layer
-- Planning service: orchestration logic
-- Predictor module: risk estimation and uncertainty logic
-- Graph module: spatial adjacency construction
-- RL environment and PPO planner: intervention optimization
-- SQLite database: persistence for datasets, predictions, recommendations, and experiments
-- Static assets and templates: frontend UI and dashboard views
+- Flask app: web interface and API layer.
+- Planning service: orchestration logic.
+- Predictor module: risk estimation and uncertainty logic.
+- Graph module: spatial adjacency construction.
+- RL environment and PPO planner: intervention optimization.
+- SQLite database: persistence for datasets, predictions, recommendations, and experiments.
+- Static assets and templates: frontend UI and dashboard views.
 
 The application flow is:
 
@@ -202,11 +202,11 @@ This project is useful for:
 
 URB-SAGE demonstrates a complete local workflow for climate-resilient urban planning, combining:
 
-- Geospatial risk modeling
-- Climate scenario analysis
-- Uncertainty-aware prediction
-- Graph-based learning
-- Reinforcement learning for intervention selection
-- Dashboard-based result exploration
+- Geospatial risk modeling.
+- Climate scenario analysis.
+- Uncertainty-aware prediction.
+- Graph-based learning.
+- Reinforcement learning for intervention selection.
+- Dashboard-based result exploration.
 
-URB-SAGE is best understood as a transparent research prototype that can be extended to real-world and policy analysis workflows.#
+URB-SAGE is best understood as a transparent research prototype that can be extended to real-world and policy analysis workflows.
